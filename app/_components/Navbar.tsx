@@ -11,7 +11,7 @@ const Navbar = () => {
     setIsNavOpen(!isNavOpen);
   };
   return (
-    <nav className="navbar flex justify-between h-24 px-2 md:px-9 items-center w-screen  ">
+    <nav className="navbar flex justify-between h-24 px-2 md:px-9 items-center w-screen py-4 ">
       {/* navbar background */}
       <div
         className="absolute bg-blue-500 inset-0 z-10 pointer-events-none"
@@ -27,21 +27,38 @@ const Navbar = () => {
             : "left-0 opacity-100 pointer-events-auto"
         } fixed z-40 inset-0 flex justify-center items-center duration-700`}
       >
-        <div className="flex flex-col text-white text-center text-xl font-light space-y-3">
-          <Link className="hover:text-amber-500 duration-300" href="#">
+        <div className="flex flex-col text-white text-left uppercase font-semibold text-2xl space-y-3">
+          <Link className="hover:text-amber-500 duration-300" href={"#"}>
+            {" "}
             Home
           </Link>
-          <Link className="hover:text-amber-500 duration-300" href="#">
-            About Us
+          <Link className="hover:text-amber-500 duration-300" href={"#"}>
+            {" "}
+            Mangala Devi Singh
           </Link>
-          <Link className="hover:text-amber-500 duration-300" href="#">
-            Get In Touch
+          <Link className="hover:text-amber-500 duration-300" href={"#"}>
+            {" "}
+            About us
           </Link>
-          <Link className="hover:text-amber-500 duration-300" href="#">
-            Privacy Policy
+          <Link className="hover:text-amber-500 duration-300" href={"#"}>
+            {" "}
+            What We Do
           </Link>
-          <Link className="hover:text-amber-500 duration-300" href="#">
-            Terms of Use
+          <Link className="hover:text-amber-500 duration-300" href={"#"}>
+            {" "}
+            Events
+          </Link>
+          <Link className="hover:text-amber-500 duration-300" href={"#"}>
+            {" "}
+            Publication Press Release
+          </Link>
+          <Link className="hover:text-amber-500 duration-300" href={"#"}>
+            {" "}
+            Gallery
+          </Link>
+          <Link className="hover:text-amber-500 duration-300" href={"#"}>
+            {" "}
+            Contact
           </Link>
         </div>
       </div>
@@ -85,11 +102,11 @@ const Navbar = () => {
       </div>
       <div>
         <Image
-          src={"/logo.png"}
-          width={100}
+          src={"/logo.jpg"}
+          width={300}
           height={100}
           alt="unable to load logo"
-          style={{ width: "150px", height: "150px" }}
+          style={{ width: "300px", height: "80px" }}
         />
       </div>
       <button className="rounded-md uppercase bg-blue-500 px-4 py-2 grid place-content-center text-white font-semibold w-24">
