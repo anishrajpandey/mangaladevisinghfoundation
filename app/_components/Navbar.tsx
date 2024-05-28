@@ -11,7 +11,7 @@ const Navbar = () => {
     setIsNavOpen(!isNavOpen);
   };
   return (
-    <nav className="navbar flex justify-between h-24 px-2 md:px-9 items-center w-screen py-4 ">
+    <nav className="navbar fixed z-50 bg-white flex justify-between h-24 px-2 md:px-9 items-center w-screen py-4 ">
       {/* navbar background */}
       <div
         className="absolute bg-blue-500 inset-0 z-10 pointer-events-none"
@@ -21,13 +21,13 @@ const Navbar = () => {
       {/* menu items */}
       <div
         id="menu"
-        className={`${
+        className={`block md:hidden ${
           !isNavOpen
             ? "-left-full opacity-0 pointer-events-none"
             : "left-0 opacity-100 pointer-events-auto"
         } fixed z-40 inset-0 flex justify-center items-center duration-700`}
       >
-        <div className="flex flex-col text-white text-left uppercase font-semibold text-2xl space-y-3">
+        <div className="flex flex-col md:flex-row text-white text-left uppercase font-semibold text-xl md:text-md space-3">
           <Link className="hover:text-amber-500 duration-300" href={"#"}>
             {" "}
             Home
@@ -65,7 +65,7 @@ const Navbar = () => {
       <div
         id="hamIcon"
         onClick={handleHamIconClick}
-        className="cursor-pointer isolate z-50"
+        className="cursor-pointer isolate z-50 block md:hidden"
       >
         <svg
           className="pointer-events-none"
@@ -109,6 +109,39 @@ const Navbar = () => {
           style={{ width: "300px", height: "80px" }}
         />
       </div>
+      <div className="hidden md:block"></div>
+      <div className="flex flex-col md:flex-row text-black text-left uppercase font-semibold  text-sm gap-4 ">
+        <Link className="hover:text-amber-500 duration-300" href={"#"}>
+          {" "}
+          Home
+        </Link>
+
+        <Link className="hover:text-amber-500 duration-300" href={"#"}>
+          {" "}
+          About us
+        </Link>
+        <Link className="hover:text-amber-500 duration-300" href={"#"}>
+          {" "}
+          What We Do
+        </Link>
+        <Link className="hover:text-amber-500 duration-300" href={"#"}>
+          {" "}
+          Events
+        </Link>
+        <Link className="hover:text-amber-500 duration-300" href={"#"}>
+          {" "}
+          Publication Press Release
+        </Link>
+        <Link className="hover:text-amber-500 duration-300" href={"#"}>
+          {" "}
+          Gallery
+        </Link>
+        <Link className="hover:text-amber-500 duration-300" href={"#"}>
+          {" "}
+          Contact
+        </Link>
+      </div>
+
       <button className="rounded-md uppercase bg-blue-500 px-4 py-2 grid place-content-center text-white font-semibold w-24">
         Donate
       </button>
