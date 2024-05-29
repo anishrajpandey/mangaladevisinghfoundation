@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Navbar = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -10,6 +10,12 @@ const Navbar = () => {
     e.target.classList.toggle("open");
     setIsNavOpen(!isNavOpen);
   };
+
+  useEffect(() => {
+    window.addEventListener("scroll", (e) => {
+      console.log(e);
+    });
+  }, []);
   return (
     <nav className="navbar fixed z-50 bg-white flex justify-between h-24 px-2 md:px-9 items-center w-screen py-4 ">
       {/* navbar background */}

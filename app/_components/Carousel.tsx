@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function Component() {
   return (
-    <div className="h-[85vh] mt-[15vh]  w-screen">
+    <div className="h-[100vh] mt-[15vh]  w-screen blur-sm hover:blur-0 transition-all">
       <Carousel
       //       slideInterval={2000
       //   }
@@ -14,28 +14,91 @@ export default function Component() {
           width={400}
           height={300}
           style={{ objectFit: "contain", width: "100%" }}
-          src="/photo.jpeg"
+          src="/images/mangala.jpg"
           //   className="object-contain"
           alt="..."
         />
-        <img
-          src="https://flowbite.com/docs/images/carousel/carousel-1.svg"
+        <Image
+          width={400}
+          height={300}
+          style={{ objectFit: "contain", width: "100%" }}
+          src="/images/image1.jpg"
+          //   className="object-contain"
           alt="..."
         />
-        <img
-          src="https://flowbite.com/docs/images/carousel/carousel-2.svg"
+        <Image
+          width={400}
+          height={300}
+          style={{ objectFit: "contain", width: "100%" }}
+          src="/images/image27.jpg"
+          //   className="object-contain"
           alt="..."
         />
-        <img
-          src="https://flowbite.com/docs/images/carousel/carousel-3.svg"
+        <Image
+          width={400}
+          height={300}
+          style={{ objectFit: "contain", width: "100%" }}
+          src="/images/image35.jpg"
+          //   className="object-contain"
           alt="..."
         />
-        <img
-          src="https://flowbite.com/docs/images/carousel/carousel-4.svg"
+        <Image
+          width={400}
+          height={300}
+          style={{ objectFit: "contain", width: "100%" }}
+          src="/images/image48.jpg"
+          //   className="object-contain"
           alt="..."
         />
-        <img
-          src="https://flowbite.com/docs/images/carousel/carousel-5.svg"
+
+        <Image
+          width={400}
+          height={300}
+          style={{ objectFit: "contain", width: "100%" }}
+          src="/images/image66.jpg"
+          //   className="object-contain"
+          alt="..."
+        />
+
+        <Image
+          width={400}
+          height={300}
+          style={{ objectFit: "contain", width: "100%" }}
+          src="/images/image79.jpg"
+          //   className="object-contain"
+          alt="..."
+        />
+
+        <Image
+          width={400}
+          height={300}
+          style={{ objectFit: "contain", width: "100%" }}
+          src="/images/image86.jpg"
+          //   className="object-contain"
+          alt="..."
+        />
+        <Image
+          width={400}
+          height={300}
+          style={{ objectFit: "contain", width: "100%" }}
+          src="/images/image100.jpg"
+          //   className="object-contain"
+          alt="..."
+        />
+        <Image
+          width={400}
+          height={300}
+          style={{ objectFit: "contain", width: "100%" }}
+          src="/images/image110.jpg"
+          //   className="object-contain"
+          alt="..."
+        />
+        <Image
+          width={400}
+          height={300}
+          style={{ objectFit: "contain", width: "100%" }}
+          src="/images/image119.jpg"
+          //   className="object-contain"
           alt="..."
         />
       </Carousel>
