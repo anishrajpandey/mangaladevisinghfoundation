@@ -13,9 +13,17 @@ const Navbar = () => {
   };
 
   useEffect(() => {
-    window.addEventListener("scroll", (e) => {
-      console.log(e);
-    });
+    // window.addEventListener("scroll", (e) => {
+    //   let position = window.scrollY; // get current page-Y-offset
+    //   window.addEventListener("scroll", () => {
+    //     // Listen for scroll
+    //     let scroll = window.scrollY; // get page-Y-offset value with every scroll
+    //     //If the scroll is greater than position, user has scrolled down, else they scrolled up
+    //     scroll > position ? console.log("down") : console.log("up");
+    //     //Set the position equal to scroll
+    //     position = scroll;
+    //   });
+    // });
   }, []);
   return (
     <nav className="navbar fixed z-50 bg-white flex justify-between h-24 px-2 md:px-9 items-center w-screen py-4 ">
@@ -127,17 +135,17 @@ const Navbar = () => {
             About
           </Link>
           <div className="dropdown absolute  min-h-fit  bg-gray-300 ounded-sm left-[50%] hidden group-hover:flex flex-col ">
-            <div className="block w-full min-w-min hover:bg-white hover:text-amber-500 duration-300 px-3 py-2">
-              <Link className=" " href={"/about"}>
+            <Link className=" " href={"/about"}>
+              <div className="block w-full min-w-min hover:bg-white hover:text-amber-500 duration-300 px-3 py-2">
                 Mangala Devi Singh
-              </Link>
-            </div>
+              </div>
+            </Link>
 
-            <div className="block w-full hover:bg-white hover:text-amber-500 duration-300 px-3 py-2">
-              <Link className="" href={"/aboutorganization"}>
-                Our organization
-              </Link>
-            </div>
+            <Link className="" href={"/aboutorganization"}>
+              <div className="block w-full hover:bg-white hover:text-amber-500 duration-300 px-3 py-2">
+                the organization
+              </div>
+            </Link>
           </div>
         </div>
 

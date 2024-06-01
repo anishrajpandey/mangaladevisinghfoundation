@@ -11,6 +11,106 @@ const page = () => {
           <AboutSection detail={true} />
         </section>
 
+        <section className="flex flex-col gap-6">
+          <p className="text-md md:text-lg text-gray-800  ">
+            Mangala Devi Singh ( मंगलादेवी सिंह) was a pioneer feminist and
+            prominent democratic right activist of Nepal. Singh got involved in
+            politics in 1940 at the age of 16. Her husband was the leading
+            Nepali Congress Leader Ganesh Man Singh. Mangala Devi Singh&apos;s
+            contributions include:
+          </p>
+          <ol>
+            <li>
+              <b> Advocacy for Women&apos;s Rights: </b>Singh was instrumental
+              in advocating for women&apos;s education and legal rights. She
+              worked tirelessly to bring issues affecting women into the public
+              discourse.
+            </li>
+
+            <li>
+              <b>Social Reforms:</b> Through her involvement with various social
+              organizations, Singh contributed to reforms aimed at improving the
+              social and economic status of women in Nepal.
+            </li>
+            <li>
+              <b> Literary Contributions:</b> She also authored works that
+              highlighted the challenges faced by women and promoted feminist
+              ideas.
+            </li>
+          </ol>
+          <hr className="my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:via-neutral-400" />
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <Image
+              className="h-auto max-w-full rounded-lg hover:grayscale transition duration-300"
+              width={600}
+              height={400}
+              src={"/images/image45.jpg"}
+              alt=""
+            />
+            <Image
+              className="h-auto max-w-full rounded-lg hover:grayscale transition duration-300"
+              width={600}
+              height={400}
+              src={"/images/image59.jpg"}
+              alt=""
+            />
+
+            <Image
+              className="h-auto max-w-full rounded-lg hover:grayscale transition duration-300"
+              width={600}
+              height={400}
+              src={"/images/image66.jpg"}
+              alt=""
+            />
+
+            <Image
+              className="h-auto max-w-full rounded-lg hover:grayscale transition duration-300"
+              width={600}
+              height={400}
+              src={"/images/image79.jpg"}
+              alt=""
+            />
+          </div>
+
+          <p className="text-md md:text-lg text-gray-800  ">
+            In 1948 Mangala Devi Singh led a delegation to Prime Minister Padma
+            Shumsher to demand education, employment and voting rights for
+            women.
+          </p>
+
+          {/*
+           */}
+
+          <p className="text-md md:text-lg text-gray-800  ">
+            <span>
+              In 1952, the Nepal Womens Association had an ideological split,
+              with Mangala leading a faction which believed that womens rights
+              could be attained through democratic reform. while another
+              faction, led by Kamaksha Devi held the belief that only a radical
+              change could provide women with their rights, this division
+              culminated later that year when a decision to protest the arrival
+              of First Indian Prime Minister Jawaharlal Nehru caused Mangala to
+              lose her support. During the protest police arrested a number of
+              women attempting to reach the Prime Minister to protest radically
+              with black flags, contrary to this Mangala welcomed Nehru alone.
+              This act lead to her removal as president and replacement with
+              Kamaksha Devi. Congress Leader Ganesh Man Singh.
+              <br /> <br />
+              She died in August 1996 of Kidney Failure, Aged 70
+            </span>
+            <br />
+            <br />
+            <b>
+              {" "}
+              Mangala Devi Singh&apos;s legacy is remembered as a cornerstone in
+              the development of the women&apos;s movement in Nepal. Her efforts
+              have had a lasting impact on the empowerment of women in the
+              country.
+            </b>
+          </p>
+        </section>
+
         <section className="flex flex-col gap-9">
           <h2 className="text-xl md:text-3xl font-bold text-purple-600 text-center tracking-normal uppercase">
             Mangaladevi Singh: A Pioneer Female Leader
