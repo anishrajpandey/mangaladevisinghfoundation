@@ -10,7 +10,7 @@ const PresidentsMessage = () => {
       <div className="flex flex-row-reverse  flex-wrap justify-around items-center my-4">
         <div className="rounded-md  shadow-xl overflow-hidden ">
           <Image
-            src="/Prakash_Man_Singh.jpg"
+            src="/images/srijana.jpg"
             width={400}
             height={400}
             alt="Mangala Devi Singh Photo"
@@ -34,8 +34,9 @@ const PresidentsMessage = () => {
           <br />
           <br />
           <b>
-            Prakash Man Singh, President, <br />
-            Ganesh Man Singh Foundation.
+            Srijana Singh,
+            <br /> President <br />
+            Mangaladevi Singh Foundation
           </b>
         </p>
       </div>

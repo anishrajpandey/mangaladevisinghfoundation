@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <main>
       <CarouselComponent />
-      <AboutSection />
+      <AboutSection detail={false} />
       <PresidentsMessage />
     </main>
   );

@@ -1,5 +1,6 @@
 "use client";
 
+import { DialogBody } from "@material-tailwind/react";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
@@ -20,7 +21,7 @@ const Navbar = () => {
     <nav className="navbar fixed z-50 bg-white flex justify-between h-24 px-2 md:px-9 items-center w-screen py-4 ">
       {/* navbar background */}
       <div
-        className="absolute bg-blue-500 inset-0 z-10 pointer-events-none"
+        className="absolute bg-blue-500 inset-0 h-screen z-10 pointer-events-none"
         id="openNavBg"
       ></div>
 
@@ -34,7 +35,8 @@ const Navbar = () => {
         } fixed z-40 inset-0 flex justify-center items-center duration-700`}
       >
         <div className="flex flex-col md:flex-row text-white text-left uppercase font-semibold text-xl md:text-md space-3">
-          <Link className="hover:text-amber-500 duration-300" href={"#"}>
+          {/* for the mobile VIEW */}
+          <Link className="hover:text-amber-500 duration-300" href={"/"}>
             {" "}
             Home
           </Link>
@@ -42,14 +44,11 @@ const Navbar = () => {
             {" "}
             Mangala Devi Singh
           </Link>
-          <Link className="hover:text-amber-500 duration-300" href={"#"}>
+          <Link className="hover:text-amber-500 duration-300" href={"/about"}>
             {" "}
             About us
           </Link>
-          <Link className="hover:text-amber-500 duration-300" href={"#"}>
-            {" "}
-            What We Do
-          </Link>
+
           <Link className="hover:text-amber-500 duration-300" href={"#"}>
             {" "}
             Events
@@ -116,27 +115,39 @@ const Navbar = () => {
         />
       </div>
       <div className="hidden md:block"></div>
-      <div className="flex flex-col md:flex-row text-black text-left uppercase font-semibold  text-sm gap-4 ">
-        <Link className="hover:text-amber-500 duration-300" href={"#"}>
+      <div className="md:flex hidden  md:flex-row text-black text-left uppercase font-semibold  text-sm gap-4 ">
+        {/* For the Desktop view */}
+        <Link className="hover:text-amber-500 duration-300" href={"/"}>
           {" "}
           Home
         </Link>
+        <div className="duration-300 relative group">
+          <Link className=" " href={"#"}>
+            {" "}
+            About
+          </Link>
+          <div className="dropdown absolute  min-h-fit  bg-gray-300 ounded-sm left-[50%] hidden group-hover:flex flex-col ">
+            <div className="block w-full min-w-min hover:bg-white hover:text-amber-500 duration-300 px-3 py-2">
+              <Link className=" " href={"/about"}>
+                Mangala Devi Singh
+              </Link>
+            </div>
 
-        <Link className="hover:text-amber-500 duration-300" href={"#"}>
-          {" "}
-          About us
-        </Link>
-        <Link className="hover:text-amber-500 duration-300" href={"#"}>
-          {" "}
-          What We Do
-        </Link>
+            <div className="block w-full hover:bg-white hover:text-amber-500 duration-300 px-3 py-2">
+              <Link className="" href={"/aboutorganization"}>
+                Our organization
+              </Link>
+            </div>
+          </div>
+        </div>
+
         <Link className="hover:text-amber-500 duration-300" href={"#"}>
           {" "}
           Events
         </Link>
         <Link className="hover:text-amber-500 duration-300" href={"#"}>
           {" "}
-          Publication Press Release
+          Press
         </Link>
         <Link className="hover:text-amber-500 duration-300" href={"#"}>
           {" "}
