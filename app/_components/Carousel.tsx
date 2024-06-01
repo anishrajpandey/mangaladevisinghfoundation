@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function Component() {
   return (
-    <div className="h-[100vh] mt-[15vh]  w-screen ">
+    <div className="h-[50vh] md:h-[100vh] mt-[15vh]  w-screen ">
       <Carousel
       //       slideInterval={2000
       //   }

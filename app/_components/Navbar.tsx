@@ -48,14 +48,25 @@ const Navbar = () => {
             {" "}
             Home
           </Link>
-          <Link className="hover:text-amber-500 duration-300" href={"#"}>
-            {" "}
-            Mangala Devi Singh
-          </Link>
-          <Link className="hover:text-amber-500 duration-300" href={"/about"}>
-            {" "}
-            About us
-          </Link>
+          <div className="duration-300 relative group">
+            <Link className=" " href={"#"}>
+              {" "}
+              About
+            </Link>
+            <div className="dropdown absolute  min-h-fit  bg-gray-300 ounded-sm left-[50%] hidden group-hover:flex flex-col ">
+              <Link className=" " href={"/about"}>
+                <div className="block w-full min-w-min hover:bg-white hover:text-amber-500 duration-300 px-3 py-2">
+                  Mangala Devi Singh
+                </div>
+              </Link>
+
+              <Link className="" href={"/aboutorganization"}>
+                <div className="block w-full hover:bg-white hover:text-amber-500 duration-300 px-3 py-2">
+                  the organization
+                </div>
+              </Link>
+            </div>
+          </div>
 
           <Link className="hover:text-amber-500 duration-300" href={"#"}>
             {" "}
@@ -63,7 +74,7 @@ const Navbar = () => {
           </Link>
           <Link className="hover:text-amber-500 duration-300" href={"#"}>
             {" "}
-            Publication Press Release
+            Press
           </Link>
           <Link className="hover:text-amber-500 duration-300" href={"#"}>
             {" "}
@@ -73,6 +84,9 @@ const Navbar = () => {
             {" "}
             Contact
           </Link>
+          <button className="rounded-md uppercase bg-blue-500 px-4 py-2 grid place-content-center text-white font-semibold w-24">
+            Donate
+          </button>
         </div>
       </div>
       <div
