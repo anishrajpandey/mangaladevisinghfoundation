@@ -178,7 +178,7 @@ const page = () => {
 
         {/*
          */}
-        <div className="border shadow-md flex  gap-2 flex-col items-center justify-center">
+        {/* <div className="border shadow-md flex  gap-2 flex-col items-center justify-center">
           <div className="bg-gray-400 height-[300px] w-full ">
             <Image
               src={"/images/dilip.jpg"}
@@ -200,7 +200,7 @@ const page = () => {
             />
             <InstaIcon link={"https://www.instagram.com/dilip_shrestha57/"} />
           </div>
-        </div>
+        </div> */}
       </div>
     </main>
   );

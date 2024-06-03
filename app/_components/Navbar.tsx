@@ -42,13 +42,14 @@ const Navbar = () => {
             : "left-0 opacity-100 pointer-events-auto"
         } fixed z-40 inset-0 flex justify-center items-center duration-700`}
       >
-        <div className="flex flex-col md:flex-row text-white text-left uppercase font-semibold text-xl md:text-md space-3">
+        <div className="flex flex-col md:flex-row text-white text-left uppercase font-semibold text-xl md:text-md space-3 ">
+          {/* todo  */}
           {/* for the mobile VIEW */}
           <Link className="hover:text-amber-500 duration-300" href={"/"}>
             {" "}
             Home
           </Link>
-          <div className="duration-300 relative group">
+          <div className="duration-300  group hover:text-amber-500 ">
             <Link className=" " href={"#"}>
               {" "}
               About
@@ -137,7 +138,7 @@ const Navbar = () => {
         />
       </div>
       <div className="hidden md:block"></div>
-      <div className="md:flex  hidden  md:flex-row text-black text-left uppercase font-semibold  text-sm gap-7 ">
+      <div className="md:flex  hidden  md:flex-row text-black text-left uppercase font-semibold  text-sm gap-7 relative ">
         {/* For the Desktop view */}
         <Link
           className="hover:text-amber-500 duration-300 flex gap-1 items-center  "
@@ -155,16 +156,19 @@ const Navbar = () => {
           >
             <path
               stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
               d="m4 12 8-8 8 8M6 10.5V19a1 1 0 0 0 1 1h3v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h3a1 1 0 0 0 1-1v-8.5"
             />
           </svg>
           Home
         </Link>
-        <div className="duration-300 relative group ">
-          <Link className=" flex gap-1 items-center " href={"#"}>
+        <div className="duration-300  group relative">
+          <Link
+            className=" flex gap-1 items-center hover:text-amber-500 duration-300 "
+            href={"#"}
+          >
             {" "}
             <svg
               className="w-6 h-6"
@@ -186,7 +190,7 @@ const Navbar = () => {
             About
           </Link>
           <div
-            className="dropdown absolute  min-h-fit w-72 bg-gray-300 ounded-sm  -translate-x-1/2
+            className="dropdown absolute   min-h-fit w-72 bg-gray-300 ounded-sm  -translate-x-1/2
   hidden group-hover:flex flex-col "
           >
             <Link className=" " href={"/about"}>
@@ -266,14 +270,14 @@ const Navbar = () => {
             viewBox="0 0 24 24"
           >
             <path
-              fill-rule="evenodd"
+              fillRule="evenodd"
               d="M13 10a1 1 0 0 1 1-1h.01a1 1 0 1 1 0 2H14a1 1 0 0 1-1-1Z"
-              clip-rule="evenodd"
+              clipRule="evenodd"
             />
             <path
-              fill-rule="evenodd"
+              fillRule="evenodd"
               d="M2 6a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v12c0 .556-.227 1.06-.593 1.422A.999.999 0 0 1 20.5 20H4a2.002 2.002 0 0 1-2-2V6Zm6.892 12 3.833-5.356-3.99-4.322a1 1 0 0 0-1.549.097L4 12.879V6h16v9.95l-3.257-3.619a1 1 0 0 0-1.557.088L11.2 18H8.892Z"
-              clip-rule="evenodd"
+              clipRule="evenodd"
             />
           </svg>
           Gallery
@@ -304,7 +308,24 @@ const Navbar = () => {
         </Link>
       </div>
 
-      <button className="rounded-md uppercase bg-blue-500 px-4 py-2 grid place-content-center text-white font-semibold w-24">
+      <button className="rounded-md uppercase bg-blue-500 px-4 py-2 grid place-content-center text-white font-semibold gap-0 w-fit grid-cols-2">
+        <svg
+          className="w-6 h-6"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          fill="none"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke="currentColor"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            d="M8 17.345a4.76 4.76 0 0 0 2.558 1.618c2.274.589 4.512-.446 4.999-2.31.487-1.866-1.273-3.9-3.546-4.49-2.273-.59-4.034-2.623-3.547-4.488.486-1.865 2.724-2.899 4.998-2.31.982.236 1.87.793 2.538 1.592m-3.879 12.171V21m0-18v2.2"
+          />
+        </svg>
         Donate
       </button>
     </nav>
