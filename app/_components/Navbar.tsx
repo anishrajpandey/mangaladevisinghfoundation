@@ -55,17 +55,17 @@ const Navbar = () => {
               About
             </Link>
             <div className="dropdown absolute  min-h-fit  bg-gray-300 ounded-sm left-[50%] hidden group-hover:flex flex-col ">
-              <Link className=" " href={"/about"}>
-                <div className="block w-full min-w-min hover:bg-white hover:text-amber-500 duration-300 px-3 py-2">
+              <div className="block w-full min-w-min hover:bg-white hover:text-amber-500 duration-300 px-3 py-2">
+                <Link className=" " href={"/about"}>
                   Mangala Devi Singh
-                </div>
-              </Link>
+                </Link>
+              </div>
 
-              <Link className="" href={"/aboutorganization"}>
-                <div className="block w-full hover:bg-white hover:text-amber-500 duration-300 px-3 py-2">
+              <div className="block w-full hover:bg-white hover:text-amber-500 duration-300 px-3 py-2">
+                <Link className="" href={"/aboutorganization"}>
                   the organization
-                </div>
-              </Link>
+                </Link>
+              </div>
             </div>
           </div>
 
@@ -206,31 +206,102 @@ const Navbar = () => {
             </Link>
           </div>
         </div>
-
-        <Link
-          className="hover:text-amber-500 duration-300  flex gap-1 items-center"
-          href={"#"}
-        >
-          {" "}
-          <svg
-            className="w-6 h-6"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            fill="none"
-            viewBox="0 0 24 24"
+        <div className="duration-300  cursor-pointer group relative">
+          <Link
+            className="hover:text-amber-500 duration-300  flex gap-1 items-center"
+            href={"/events"}
           >
-            <path
-              stroke="currentColor"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M4 10h16m-8-3V4M7 7V4m10 3V4M5 20h14a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1Zm3-7h.01v.01H8V13Zm4 0h.01v.01H12V13Zm4 0h.01v.01H16V13Zm-8 4h.01v.01H8V17Zm4 0h.01v.01H12V17Zm4 0h.01v.01H16V17Z"
-            />
-          </svg>
-          Events
-        </Link>
+            {" "}
+            <svg
+              className="w-6 h-6"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="none"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke="currentColor"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M4 10h16m-8-3V4M7 7V4m10 3V4M5 20h14a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1Zm3-7h.01v.01H8V13Zm4 0h.01v.01H12V13Zm4 0h.01v.01H16V13Zm-8 4h.01v.01H8V17Zm4 0h.01v.01H12V17Zm4 0h.01v.01H16V17Z"
+              />
+            </svg>
+            Events
+          </Link>
+
+          {/* Events dropdown */}
+          <div
+            className="dropdown absolute   min-h-fit w-72 bg-gray-300 rounded-sm  -translate-x-1/2
+  hidden group-hover:flex flex-col "
+          >
+            {/* <div className=" "> */}
+            <div className=" w-full min-w-min h-16 flex justify-center items-center  hover:bg-gray-200 bg-white hover:text-amber-500 duration-300 px-3 py-2 relative group/event1 border">
+              Year : 2079/080
+              {/* sub dropdown for event */}
+              <div className="dropdown absolute hidden top-0  min-h-fit w-72 bg-gray-300 rounded-sm left-full flex-col group-hover/event1:flex">
+                <div className=" w-full min-w-min h-16 flex justify-center items-center  hover:bg-gray-200 bg-white hover:text-amber-500 duration-300 px-3 py-2 relative">
+                  <Link className=" " href={"/about"}>
+                    Event 1{/* sub dropdown for event */}
+                  </Link>
+                </div>
+                <div className=" w-full min-w-min h-16 flex justify-center items-center  hover:bg-gray-200 bg-white hover:text-amber-500 duration-300 px-3 py-2 relative">
+                  <Link className=" " href={"/about"}>
+                    Event 1{/* sub dropdown for event */}
+                  </Link>
+                </div>
+                <div className=" w-full min-w-min h-16 flex justify-center items-center  hover:bg-gray-200 bg-white hover:text-amber-500 duration-300 px-3 py-2 relative">
+                  <Link className=" " href={"/about"}>
+                    Event 1{/* sub dropdown for event */}
+                  </Link>
+                </div>
+                <div className=" w-full min-w-min h-16 flex justify-center items-center  hover:bg-gray-200 bg-white hover:text-amber-500 duration-300 px-3 py-2 relative">
+                  <Link className=" " href={"/about"}>
+                    Event 1{/* sub dropdown for event */}
+                  </Link>
+                </div>
+                <div className=" w-full min-w-min h-16 flex justify-center items-center  hover:bg-gray-200 bg-white hover:text-amber-500 duration-300 px-3 py-2 relative">
+                  <Link className=" " href={"/about"}>
+                    Event 1{/* sub dropdown for event */}
+                  </Link>
+                </div>
+
+                <div className=" h-16 flex justify-center items-center  w-full bg-white hover:bg-gray-200 hover:text-amber-500 duration-300 px-3 py-2">
+                  <Link className="" href={"/aboutorganization"}>
+                    Event 2
+                  </Link>
+                </div>
+              </div>
+            </div>
+            {/* </div> */}
+            {/* 
+            <div className=" h-16 flex justify-center items-center  w-full bg-white hover:bg-gray-200 hover:text-amber-500 duration-300 px-3 py-2"> */}
+            <div className=" w-full min-w-min h-16 flex justify-center items-center  hover:bg-gray-200 bg-white hover:text-amber-500 duration-300 px-3 py-2 relative group/event2 ">
+              Year: 2080/081
+              <div className="dropdown absolute hidden top-0  min-h-fit w-72 bg-gray-300 rounded-sm left-full flex-col group-hover/event2:flex">
+                <div className=" w-full min-w-min h-16 flex justify-center items-center  hover:bg-gray-200 bg-white hover:text-amber-500 duration-300 px-3 py-2 relative">
+                  <Link className=" " href={"/about"}>
+                    Event 2{/* sub dropdown for event */}
+                  </Link>
+                </div>
+                <div className=" w-full min-w-min h-16 flex justify-center items-center  hover:bg-gray-200 bg-white hover:text-amber-500 duration-300 px-3 py-2 relative">
+                  <Link className=" " href={"/about"}>
+                    Event 2{/* sub dropdown for event */}
+                  </Link>
+                </div>
+                <div className=" w-full min-w-min h-16 flex justify-center items-center  hover:bg-gray-200 bg-white hover:text-amber-500 duration-300 px-3 py-2 relative">
+                  <Link className=" " href={"/about"}>
+                    Event 2{/* sub dropdown for event */}
+                  </Link>
+                </div>
+              </div>
+              {/* sub events */}
+            </div>
+          </div>
+        </div>
+        {/* </div> */}
         <Link
           className="hover:text-amber-500 duration-300  flex gap-1 items-center"
           href={"#"}
