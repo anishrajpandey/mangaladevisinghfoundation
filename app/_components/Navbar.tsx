@@ -134,7 +134,7 @@ const Navbar = () => {
           width={300}
           height={100}
           alt="unable to load logo"
-          style={{ width: "300px", height: "80px" }}
+          style={{ width: "auto", height: "auto" }}
         />
       </div>
       <div className="hidden md:block"></div>
@@ -243,7 +243,7 @@ const Navbar = () => {
               {/* sub dropdown for event */}
               <div className="dropdown absolute hidden top-0  min-h-fit w-72 bg-gray-300 rounded-sm left-full flex-col group-hover/event1:flex">
                 <div className=" w-full min-w-min h-16 flex justify-center items-center  hover:bg-gray-200 bg-white hover:text-amber-500 duration-300 px-3 py-2 relative">
-                  <Link className=" " href={"/about"}>
+                  <Link className=" " href={"/events/list?id=0101"}>
                     Event 1{/* sub dropdown for event */}
                   </Link>
                 </div>
@@ -379,8 +379,8 @@ const Navbar = () => {
         </Link>
       </div>
 
-      <button className="rounded-md uppercase bg-blue-500 px-4 py-2 grid place-content-center text-white font-semibold gap-0 w-fit grid-cols-2">
-        <svg
+      <button className="rounded-md uppercase bg-blue-500 px-4 py-2 grid place-content-center text-white font-semibold gap-0 w-fit ">
+        {/* <svg
           className="w-6 h-6"
           aria-hidden="true"
           xmlns="http://www.w3.org/2000/svg"
@@ -396,7 +396,7 @@ const Navbar = () => {
             strokeWidth="2"
             d="M8 17.345a4.76 4.76 0 0 0 2.558 1.618c2.274.589 4.512-.446 4.999-2.31.487-1.866-1.273-3.9-3.546-4.49-2.273-.59-4.034-2.623-3.547-4.488.486-1.865 2.724-2.899 4.998-2.31.982.236 1.87.793 2.538 1.592m-3.879 12.171V21m0-18v2.2"
           />
-        </svg>
+        </svg> */}
         Donate
       </button>
     </nav>
