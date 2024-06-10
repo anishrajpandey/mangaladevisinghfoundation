@@ -1,17 +1,40 @@
 "use client";
 import Image from "next/image";
-import { useSearchParams } from "next/navigation";
 import React, { useEffect, useState } from "react";
 import data from "./../data";
+import { usePathname } from "next/navigation";
+
 const Page = () => {
-  const [SelectedEvent, setSelectedEvent] = useState({});
-  let Allparams = useSearchParams();
-  let EventID = Allparams.get("id") || 1;
+  const pathname = usePathname();
+
+  const [SelectedEvent, setSelectedEvent] = useState({
+    id: 3,
+    titleEnglish: ``,
+    titleNepali: ``,
+    descEnglish: ``,
+    descNepali: ``,
+    date: ``,
+    images: [""],
+  });
+
+  let EventID = pathname.split("/").at(-1) || 1;
+  function loadEvents() {
+    let filteredData = data.filter(({ id }) => {
+      return id === +EventID;
+    })[0];
+    setSelectedEvent({
+      id: filteredData.id,
+      titleEnglish: filteredData.titleEnglish,
+      titleNepali: filteredData.titleNepali,
+      descEnglish: filteredData.descEnglish,
+      descNepali: filteredData.descNepali,
+      date: filteredData.date,
+      images: filteredData.images,
+    });
+  }
 
   useEffect(() => {
-    console.log(EventID);
-    console.log(data);
-    setSelectedEvent(data.filter(({ id }) => id === +EventID));
+    loadEvents();
   }, []);
 
   return (
@@ -27,57 +50,49 @@ const Page = () => {
             />
             <div>
               <h1 className="text-gray-800 text-2xl md:text-4xl font-bold">
-                Title of the Event in english
+                {SelectedEvent.titleEnglish}
+                {/* {SelectedEvent.titlee} */}
               </h1>
               <h2 className="text-gray-800 text-lg md:text-2xl font-semibold">
-                Title of the Event in Nepali
+                {SelectedEvent.titleNepali}{" "}
               </h2>
               <h2 className="text-gray-800 text-md italic">
-                23rd February 2023
+                {SelectedEvent.date}
               </h2>
             </div>
           </div>
 
           <section>
             <div className="w-full min-h-[60vh] relative">
-              <Image src={"/eventphotos/0101.jpg"} fill alt="image" />
-            </div>
-            <p className="text-md md:text-lg py-4">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
-              quibusdam ducimus dolores! Maxime, eius. Odio, esse sint. Iure,
-              consectetur voluptas? Doloribus odit eius, ut cum nemo quidem
-              eveniet laboriosam. Obcaecati perspiciatis modi cum placeat
-              architecto, nam sequi hic suscipit repudiandae neque reprehenderit
-              odio praesentium?
-            </p>
-
-            <p className="text-md md:text-lg py-4">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
-              quibusdam ducimus dolores! Maxime, eius. Odio, esse sint. Iure,
-              consectetur voluptas? Doloribus odit eius, ut cum nemo quidem
-              eveniet laboriosam. Obcaecati perspiciatis modi cum placeat
-              architecto, nam sequi hic suscipit repudiandae neque reprehenderit
-              odio praesentium?
-            </p>
-
-            <div className="my-4">
               <Image
-                src={"/eventphotos/0102.jpg"}
-                height={700}
-                width={700}
-                style={{ width: "100%", height: "100%" }}
+                src={`/eventphotos/${SelectedEvent.images[0]}`}
+                fill
                 alt="image"
               />
             </div>
-            <div className="my-4">
-              <Image
-                src={"/eventphotos/0103.jpg"}
-                height={700}
-                width={700}
-                style={{ width: "100%", height: "100%" }}
-                alt="image"
-              />
-            </div>
+            <p className="text-md md:text-lg py-4 cursor-pointer">
+              {SelectedEvent.descEnglish}
+            </p>
+
+            <p className="text-md md:text-lg py-4">
+              {SelectedEvent.descNepali}
+            </p>
+            {SelectedEvent.images.map((image, index) => {
+              if (index == 0) return;
+              return (
+                <div key={index}>
+                  <div className="my-6">
+                    <Image
+                      src={`/eventphotos/${image}`}
+                      height={700}
+                      width={700}
+                      style={{ width: "100%", height: "100%" }}
+                      alt="image"
+                    />
+                  </div>
+                </div>
+              );
+            })}
           </section>
         </main>
       ) : (

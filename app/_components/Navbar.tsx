@@ -243,13 +243,14 @@ const Navbar = () => {
               {/* sub dropdown for event */}
               <div className="dropdown absolute hidden top-0  min-h-fit w-72 bg-gray-300 rounded-sm left-full flex-col group-hover/event1:flex">
                 <div className=" w-full min-w-min h-16 flex justify-center items-center  hover:bg-gray-200 bg-white hover:text-amber-500 duration-300 px-3 py-2 relative">
-                  <Link className=" " href={"/events/list?id=0101"}>
-                    Event 1{/* sub dropdown for event */}
+                  <Link className=" " href={"/events/1"}>
+                    Book Distribution{/* sub dropdown for event */}
                   </Link>
                 </div>
                 <div className=" w-full min-w-min h-16 flex justify-center items-center  hover:bg-gray-200 bg-white hover:text-amber-500 duration-300 px-3 py-2 relative">
-                  <Link className=" " href={"/about"}>
-                    Event 1{/* sub dropdown for event */}
+                  <Link className=" " href={"/events/2"}>
+                    Three Months Basic Sewing training
+                    {/* sub dropdown for event */}
                   </Link>
                 </div>
                 <div className=" w-full min-w-min h-16 flex justify-center items-center  hover:bg-gray-200 bg-white hover:text-amber-500 duration-300 px-3 py-2 relative">
