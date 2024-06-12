@@ -334,7 +334,7 @@ const Navbar = () => {
         </Link>
         <Link
           className="hover:text-amber-500 duration-300  flex gap-1 items-center"
-          href={"#"}
+          href={"/gallery"}
         >
           {" "}
           <svg
