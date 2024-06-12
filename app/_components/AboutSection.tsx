@@ -30,8 +30,7 @@ const AboutSection = ({ detail }: { detail: Boolean }) => {
             feminist movement in Nepal during the mid-20th century. She was one
             of the founding members of the Nepal Women&apos;s Association (NWA),
             established in 1947, which aimed to empower women and address issues
-            such as women&apos;s education, health, and social status. Mangala
-            Devi Singh&apos;s contributions include:
+            such as women&apos;s education, health, and social status.
           </p>
         </div>
       </div>

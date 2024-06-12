@@ -3,9 +3,10 @@
 import { DialogBody } from "@material-tailwind/react";
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 
 const Navbar = () => {
+  let NavbarRef = useRef(null);
   const [isNavOpen, setIsNavOpen] = useState(false);
   const handleHamIconClick = (e: any) => {
     e.target.classList.toggle("open");
@@ -13,20 +14,24 @@ const Navbar = () => {
   };
 
   useEffect(() => {
-    // window.addEventListener("scroll", (e) => {
-    //   let position = window.scrollY; // get current page-Y-offset
-    //   window.addEventListener("scroll", () => {
-    //     // Listen for scroll
-    //     let scroll = window.scrollY; // get page-Y-offset value with every scroll
-    //     //If the scroll is greater than position, user has scrolled down, else they scrolled up
-    //     scroll > position ? console.log("down") : console.log("up");
-    //     //Set the position equal to scroll
-    //     position = scroll;
-    //   });
-    // });
+    let position = window.scrollY; // get current page-Y-offset
+    window.addEventListener("scroll", (e) => {
+      let scroll = window.scrollY;
+      if (scroll > position) {
+        NavbarRef?.current?.classList?.add("-top-full");
+      } else {
+        NavbarRef?.current?.classList?.remove("-top-full");
+
+        console.log("up");
+      }
+      position = scroll;
+    });
   }, []);
   return (
-    <nav className="navbar fixed z-50 bg-white flex justify-between h-24 px-2 md:px-9 items-center w-screen py-4 ">
+    <nav
+      ref={NavbarRef}
+      className="navbar transition-all duration-500 fixed z-50 bg-white flex justify-between h-24 px-2 md:px-9 items-center w-screen py-4 "
+    >
       {/* navbar background */}
       <div
         className="absolute bg-blue-500 inset-0 h-screen z-10 pointer-events-none"
@@ -195,13 +200,13 @@ const Navbar = () => {
           >
             <Link className=" " href={"/about"}>
               <div className=" w-full min-w-min h-16 flex justify-center items-center  hover:bg-gray-200 bg-white hover:text-amber-500 duration-300 px-3 py-2">
-                Mangala Devi Singh
+                lATE Mangala Devi Singh
               </div>
             </Link>
 
             <Link className="" href={"/aboutorganization"}>
               <div className=" h-16 flex justify-center items-center  w-full bg-white hover:bg-gray-200 hover:text-amber-500 duration-300 px-3 py-2">
-                the organization
+                MANGALADEVISINGH FOUNDATION
               </div>
             </Link>
           </div>
@@ -239,17 +244,17 @@ const Navbar = () => {
           >
             {/* <div className=" "> */}
             <div className=" w-full min-w-min h-16 flex justify-center items-center  hover:bg-gray-200 bg-white hover:text-amber-500 duration-300 px-3 py-2 relative group/event1 border">
-              Year : 2080
+              Year : 2080 / 81
               {/* sub dropdown for event */}
               <div className="dropdown absolute hidden top-0  min-h-fit w-72 bg-gray-300 rounded-sm left-full flex-col group-hover/event1:flex">
                 <div className=" w-full min-w-min h-16 flex justify-center items-center  hover:bg-gray-200 bg-white hover:text-amber-500 duration-300 px-3 py-2 relative">
                   <Link className=" " href={"/events/1"}>
-                    Book Distribution{/* sub dropdown for event */}
+                    पुस्तक हस्तान्तरण कार्यक्रम {/* sub dropdown for event */}
                   </Link>
                 </div>
                 <div className=" w-full min-w-min h-16 flex justify-center items-center  hover:bg-gray-200 bg-white hover:text-amber-500 duration-300 px-3 py-2 relative">
                   <Link className=" " href={"/events/2"}>
-                    Three Months Basic Sewing training
+                    तीन महिने बेसिक सिलाई तालिम
                     {/* sub dropdown for event */}
                   </Link>
                 </div>
@@ -280,7 +285,7 @@ const Navbar = () => {
             {/* 
             <div className=" h-16 flex justify-center items-center  w-full bg-white hover:bg-gray-200 hover:text-amber-500 duration-300 px-3 py-2"> */}
             <div className=" w-full min-w-min h-16 flex justify-center items-center  hover:bg-gray-200 bg-white hover:text-amber-500 duration-300 px-3 py-2 relative group/event2 ">
-              Year : 2081
+              Year : 2081 / 82
               <div className="dropdown absolute hidden top-0  min-h-fit w-72 bg-gray-300 rounded-sm left-full flex-col group-hover/event2:flex">
                 <div className=" w-full min-w-min h-16 flex justify-center items-center  hover:bg-gray-200 bg-white hover:text-amber-500 duration-300 px-3 py-2 relative">
                   <Link className=" " href={"/about"}>

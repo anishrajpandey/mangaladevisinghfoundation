@@ -18,25 +18,21 @@ const PresidentsMessage = () => {
         </div>
 
         <p className="w-full px-12 md:w-1/2">
-          It is Mangala Devi Singh Foundation&#39;s pride to continue Mangala
-          Devi Singh&#39;s legacy. Singh, besides being one of Nepal&#39;s most
-          revered and respected leader, ensured a positive development of Nepal,
-          and Nepalis throughout his lifetime. Considered Nepal&#39;s Father of
-          Democracy, Singh in his lifetime resisted against two regimes to
-          ensure Nepalis weren&#39;t deprived of their inherent right to
-          democracy. He first led a movement against the autocratic Rana regime
-          which ruled over Nepal for more than 100 years, and later against the
-          &#39;partyless&#39; Panchayat System introduced by then King Mahendra.
-          The Foundation continues to cherish Singh&#39;s belief in democracy,
-          and other activities which include development of sports,
-          infrastructure, improvement of living standards of all Nepalis, and
-          much more.
+          मंगलादेवीसिंह फाउन्डेशनको अध्यक्षको रूपमा, म सृजना सिंहले तपाईंहरू
+          सबैलाई हाम्रो वेबसाइटमा हार्दिक स्वागत गर्न चाहन्छु। हाम्रो संस्था
+          शिक्षा, स्वास्थ्य, र समाज सेवाको क्षेत्रमा योगदान पुर्याउने
+          प्रतिबद्धतामा दृढ रहेको छ। हामीले हाम्रा कार्यक्रमहरू मार्फत जनचेतना
+          अभिवृद्धि, स्वास्थ्य सेवा सुधार, र शिक्षा अवसरहरूको विस्तार गर्ने
+          प्रयास गरिरहेका छौं। समाजको हरेक वर्गलाई सशक्त बनाउन, विशेष गरी
+          महिलाहरू र बालबालिकाहरूको जीवनस्तर उकास्न हामी समर्पित छौं। तपाईंहरूको
+          सहयोग र सद्भावनाले हाम्रो लक्ष्य प्राप्तिमा महत्वपूर्ण भूमिका खेल्नेछ।
+          एकसाथ मिलेर, हामी उज्जवल भविष्यको मार्गमा अगाडि बढ्न सक्छौं।
           <br />
           <br />
           <b>
-            Srijana Singh,
-            <br /> President <br />
-            Mangaladevi Singh Foundation
+            धन्यवाद,
+            <br /> सृजना सिंह <br />
+            अध्यक्ष, मंगलादेवीसिंह फाउन्डेशन
           </b>
         </p>
       </div>
