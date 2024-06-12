@@ -50,11 +50,10 @@ const Page = () => {
             />
             <div>
               <h1 className="text-gray-800 text-2xl md:text-4xl font-bold">
-                {SelectedEvent.titleEnglish}
-                {/* {SelectedEvent.titlee} */}
+                {SelectedEvent.titleNepali} {/* {SelectedEvent.titlee} */}
               </h1>
               <h2 className="text-gray-800 text-lg md:text-2xl font-semibold">
-                {SelectedEvent.titleNepali}{" "}
+                {SelectedEvent.titleEnglish}
               </h2>
               <h2 className="text-gray-800 text-md italic">
                 {SelectedEvent.date}
@@ -71,11 +70,11 @@ const Page = () => {
               />
             </div>
             <p className="text-md md:text-lg py-4 cursor-pointer">
-              {SelectedEvent.descEnglish}
+              {SelectedEvent.descNepali}
             </p>
 
-            <p className="text-md md:text-lg py-4">
-              {SelectedEvent.descNepali}
+            <p className="text-md md:text-lg py-4 text-gray-500">
+              {SelectedEvent.descEnglish}
             </p>
             {SelectedEvent.images.map((image, index) => {
               if (index == 0) return;

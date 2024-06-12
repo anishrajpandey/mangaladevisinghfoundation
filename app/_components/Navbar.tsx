@@ -310,7 +310,7 @@ const Navbar = () => {
         {/* </div> */}
         <Link
           className="hover:text-amber-500 duration-300  flex gap-1 items-center"
-          href={"#"}
+          href={"/news"}
         >
           {" "}
           <svg
