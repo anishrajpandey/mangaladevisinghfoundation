@@ -1,5 +1,7 @@
 "use client";
+import Modal from "../_components/Modal";
 import Image from "next/image";
+import Link from "next/link";
 import React, { useState } from "react";
 
 const Pages = () => {
@@ -397,6 +399,7 @@ const Pages = () => {
 
   return (
     <main className="pt-24">
+      <Modal />
       <div className="flex items-center justify-center py-4 md:py-8 flex-wrap">
         <button
           type="button"
@@ -430,14 +433,16 @@ const Pages = () => {
         {selectedImages.map((item, index) => {
           return (
             <div key={index}>
-              <Image
-                width={500}
-                height={500}
-                style={{ width: "auto", height: "auto" }}
-                className="h-auto max-w-full rounded-lg"
-                src={item}
-                alt=""
-              />
+              <Link href={`?modal=true&img=${item}`}>
+                <Image
+                  width={500}
+                  height={500}
+                  style={{ width: "auto", height: "auto" }}
+                  className="h-auto max-w-full rounded-lg"
+                  src={item}
+                  alt=""
+                />
+              </Link>
             </div>
           );
         })}
