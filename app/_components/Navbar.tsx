@@ -6,7 +6,7 @@ import Link from "next/link";
 import { useEffect, useState, useRef } from "react";
 
 const Navbar = () => {
-  let NavbarRef = useRef(null);
+  let NavbarRef = useRef<HTMLElement>(null);
   const [isNavOpen, setIsNavOpen] = useState(false);
   const handleHamIconClick = (e: any) => {
     e.target.classList.toggle("open");
