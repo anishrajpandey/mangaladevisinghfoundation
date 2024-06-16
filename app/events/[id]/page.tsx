@@ -62,10 +62,12 @@ const Page = () => {
           </div>
 
           <section>
-            <div className="w-full min-h-[60vh] relative">
+            <div className="w-full h-auto relative">
               <Image
                 src={`/eventphotos/${SelectedEvent.images[0]}`}
-                fill
+                width={500}
+                height={300}
+                className="w-screen"
                 alt="image"
               />
             </div>

@@ -30,29 +30,34 @@ const NewsData = [
     Image: "/news/news4.jpg",
     URL: "https://aawaajnews.com/democracyseries/democracy-series-phase-3-the-life-and-values-of-mangala-devi-singh/",
   },
-  //   {
-  //     Title: "",
-  //     Description: "",
-  //     Image: "",
-  //     URL: "",
-  //   },
-  //   {
-  //     Title: "",
-  //     Description: "",
-  //     Image: "",
-  //     URL: "",
-  //   },
-  //   {
-  //     Title: "",
-  //     Description: "",
-  //     Image: "",
-  //     URL: "",
-  //   },
-  //   {
-  //     Title: "",
-  //     Description: "",
-  //     Image: "",
-  //     URL: "",
-  //   },
+  {
+    Title:
+      "नेपाली महिला आन्दोलनमा महिला सशक्तिकारण, राजनैतिक चेतना एवम सामाजिक जागरण ल्याउने कार्यमा योगदान पुराउनु हुने महिलहरुको सम्मान कार्यक्रम",
+    Description:
+      "Felicitation program of women who contributed to the work of bringing women empowerment, political awareness and social awareness in Nepali Women's movement.",
+    Image: "/news/news5.png",
+    URL: "https://www.facebook.com/61550787389395/videos/442939478191651",
+  },
+  {
+    Title:
+      "India-funded high-impact community development project inaugurated in Kathmandu",
+    Description:
+      "Kathmandu [Nepal], May 27 (ANI): The buildings of Mangala Devi Singh Memorial Girls Hostel of Shree Padmakanya Secondary School at Dillibazar, Kathmandu, built with the Government of India's financial assistance was inaugurated on Monday.",
+    Image: "/news/news6.png",
+
+    URL: "https://www.aninews.in/news/world/asia/india-funded-high-impact-community-development-project-inaugurated-in-kathmandu20240527204700/",
+  },
+  {
+    Title: "",
+    Description: "",
+    Image: "",
+    URL: "",
+  },
+  {
+    Title: "",
+    Description: "",
+    Image: "",
+    URL: "",
+  },
 ];
 export default NewsData;

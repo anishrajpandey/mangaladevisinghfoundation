@@ -1,9 +1,8 @@
 "use client";
-
-import { DialogBody } from "@material-tailwind/react";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState, useRef } from "react";
+import data from "../events/data";
 
 const Navbar = () => {
   let NavbarRef = useRef<HTMLElement>(null);
@@ -246,44 +245,23 @@ const Navbar = () => {
             <div className=" w-full min-w-min h-16 flex justify-center items-center  hover:bg-gray-200 bg-white hover:text-amber-500 duration-300 px-3 py-2 relative group/event1 border">
               Year : 2080 / 81
               {/* sub dropdown for event */}
-              <div className="dropdown absolute hidden top-0  min-h-fit w-72 bg-gray-300 rounded-sm left-full flex-col group-hover/event1:flex">
-                <div className=" w-full min-w-min h-16 flex justify-center items-center  hover:bg-gray-200 bg-white hover:text-amber-500 duration-300 px-3 py-2 relative">
-                  <Link className=" " href={"/events/1"}>
-                    पुस्तक हस्तान्तरण कार्यक्रम {/* sub dropdown for event */}
-                  </Link>
-                </div>
-                <div className=" w-full min-w-min h-16 flex justify-center items-center  hover:bg-gray-200 bg-white hover:text-amber-500 duration-300 px-3 py-2 relative">
-                  <Link className=" " href={"/events/2"}>
-                    तीन महिने बेसिक सिलाई तालिम
-                    {/* sub dropdown for event */}
-                  </Link>
-                </div>
-                <div className=" w-full min-w-min h-16 flex justify-center items-center  hover:bg-gray-200 bg-white hover:text-amber-500 duration-300 px-3 py-2 relative">
-                  <Link className=" " href={"/about"}>
-                    Event 1{/* sub dropdown for event */}
-                  </Link>
-                </div>
-                <div className=" w-full min-w-min h-16 flex justify-center items-center  hover:bg-gray-200 bg-white hover:text-amber-500 duration-300 px-3 py-2 relative">
-                  <Link className=" " href={"/about"}>
-                    Event 1{/* sub dropdown for event */}
-                  </Link>
-                </div>
-                <div className=" w-full min-w-min h-16 flex justify-center items-center  hover:bg-gray-200 bg-white hover:text-amber-500 duration-300 px-3 py-2 relative">
-                  <Link className=" " href={"/about"}>
-                    Event 1{/* sub dropdown for event */}
-                  </Link>
-                </div>
-
-                <div className=" h-16 flex justify-center items-center  w-full bg-white hover:bg-gray-200 hover:text-amber-500 duration-300 px-3 py-2">
-                  <Link className="" href={"/aboutorganization"}>
-                    Event 2
-                  </Link>
-                </div>
+              <div className="dropdown absolute hidden top-0  min-h-fit w-72 bg-gray-300 rounded-sm left-full flex-col group-hover/event1:flex h-screen overflow-y-scroll">
+                {data.map((item) => {
+                  return (
+                    <div
+                      key={item.id}
+                      className=" w-full min-w-min h-16 flex justify-center items-center  hover:bg-gray-200 bg-white hover:text-amber-500 duration-300 px-3 py-2 relative"
+                    >
+                      <Link className=" " href={`/events/${item.id}`}>
+                        {item.titleNepali}
+                        {/* sub dropdown for event */}
+                      </Link>
+                    </div>
+                  );
+                })}
               </div>
             </div>
-            {/* </div> */}
-            {/* 
-            <div className=" h-16 flex justify-center items-center  w-full bg-white hover:bg-gray-200 hover:text-amber-500 duration-300 px-3 py-2"> */}
+
             <div className=" w-full min-w-min h-16 flex justify-center items-center  hover:bg-gray-200 bg-white hover:text-amber-500 duration-300 px-3 py-2 relative group/event2 ">
               Year : 2081 / 82
               <div className="dropdown absolute hidden top-0  min-h-fit w-72 bg-gray-300 rounded-sm left-full flex-col group-hover/event2:flex">
@@ -330,7 +308,7 @@ const Navbar = () => {
               d="M19 7h1v12a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h11.5M7 14h6m-6 3h6m0-10h.5m-.5 3h.5M7 7h3v3H7V7Z"
             />
           </svg>
-          News
+          - News
         </Link>
         <Link
           className="hover:text-amber-500 duration-300  flex gap-1 items-center"
