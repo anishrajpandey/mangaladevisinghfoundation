@@ -48,7 +48,7 @@ const data = [
     titleEnglish: `15-day bakery training`,
     titleNepali: ` १५ दिने   बेकरी  तालिम`,
     descEnglish: `The inauguration program of 15-day bakery training concluded today with the help of Mangala Devi Singh Foundation's technical support and Industry and Commerce office. #Be Entrepreneur #Be financially self-reliant`,
-    descEnglish: `मंगला देवी सिंह फाउण्डेशनको प्रविधिक सहयोग र उधोग तथा बाणिज्य कार्यालयको सहयोगमा १५ दिने   बेकरी  तालिमको आज  उद्घघाटन कार्यक्रम सम्पन्न । 
+    descNepali: `मंगला देवी सिंह फाउण्डेशनको प्रविधिक सहयोग र उधोग तथा बाणिज्य कार्यालयको सहयोगमा १५ दिने   बेकरी  तालिमको आज  उद्घघाटन कार्यक्रम सम्पन्न । 
 #उद्धमीबनौ #आर्थिकरूपमाआत्मनिर्भरबनौ`,
     date: `30th April, 2024`,
     images: ["0501.jpg", "0502.jpg", "0503.jpg", "0504.jpg", "0505.jpg"],
