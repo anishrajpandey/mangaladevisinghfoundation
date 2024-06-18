@@ -83,9 +83,7 @@ const Contact = () => {
                     <h4 className="mb-1 text-xl font-bold text-dark ">
                       Phone Number
                     </h4>
-                    <p className="text-base text-body-color 6">
-                      (+62)81 414 257 9980
-                    </p>
+                    <p className="text-base text-body-color 6">01-4102122 </p>
                   </div>
                 </div>
 
@@ -109,7 +107,7 @@ const Contact = () => {
                       Email Address
                     </h4>
                     <p className="text-base text-body-color 6">
-                      info@yourdomain.com
+                      mangaladevisinghfoundation@gmail.com{" "}
                     </p>
                   </div>
                 </div>
@@ -142,7 +140,7 @@ const Contact = () => {
                   <div>
                     <button
                       type="submit"
-                      className="w-full rounded border border-primary bg-primary p-3 text-white transition hover:bg-opacity-90"
+                      className="w-full rounded border border-primary bg-primary p-3 text-white bg-amber-500 transition hover:bg-opacity-90"
                     >
                       Send Message
                     </button>
