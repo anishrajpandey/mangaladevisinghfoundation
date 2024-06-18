@@ -43,21 +43,21 @@ const NewsData = [
       "India-funded high-impact community development project inaugurated in Kathmandu",
     Description:
       "Kathmandu [Nepal], May 27 (ANI): The buildings of Mangala Devi Singh Memorial Girls Hostel of Shree Padmakanya Secondary School at Dillibazar, Kathmandu, built with the Government of India's financial assistance was inaugurated on Monday.",
-    Image: "/news/news6.png",
+    Image: "/news/news6.jpg",
 
     URL: "https://www.aninews.in/news/world/asia/india-funded-high-impact-community-development-project-inaugurated-in-kathmandu20240527204700/",
   },
-  {
-    Title: "",
-    Description: "",
-    Image: "",
-    URL: "",
-  },
-  {
-    Title: "",
-    Description: "",
-    Image: "",
-    URL: "",
-  },
+  // {
+  //   Title: "",
+  //   Description: "",
+  //   Image: "",
+  //   URL: "",
+  // },
+  // {
+  //   Title: "",
+  //   Description: "",
+  //   Image: "",
+  //   URL: "",
+  // },
 ];
 export default NewsData;

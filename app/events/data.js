@@ -1,8 +1,8 @@
 const data = [
   {
     id: 1,
-    titleEnglish: "Book Distribution Program",
-    titleNepali: "पुस्तक हस्तान्तरण कार्यक्रम  ",
+    titleEnglish: "Photo Distribution Program",
+    titleNepali: "फोटो  हस्तान्तरण कार्यक्रम  ",
     descNepali:
       "नेपाल महिला संघका संस्थापक अध्यक्ष मंगला देवी सिंहको फोटो फ्रेम र `नारी संघर्ष का पाईलाहरू` पुस्तक नेपाल महिला संघका सम्पुर्ण जिल्ला अफिसलाई हस्तान्तरण कार्यक्रम आयोजक: मंगला देवी सिंह फाउण्डेशन  चाक्सीबारी, काठमाण्डौ।",
     descEnglish: `Photo frame of Mangala Devi Singh, founder president of Nepal Women's Association and handing over the book "Steps of Women's Struggle" to the entire district offices of Nepal Women's Association.

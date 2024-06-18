@@ -199,7 +199,7 @@ const Navbar = () => {
           >
             <Link className=" " href={"/about"}>
               <div className=" w-full min-w-min h-16 flex justify-center items-center  hover:bg-gray-200 bg-white hover:text-amber-500 duration-300 px-3 py-2">
-                lATE Mangala Devi Singh
+                Mangala Devi Singh
               </div>
             </Link>
 
@@ -238,14 +238,14 @@ const Navbar = () => {
 
           {/* Events dropdown */}
           <div
-            className="dropdown absolute   min-h-fit w-72 bg-gray-300 rounded-sm  -translate-x-1/2
+            className="dropdown absolute min-h-fit w-72 bg-gray-300 rounded-sm  -translate-x-1/2
   hidden group-hover:flex flex-col "
           >
             {/* <div className=" "> */}
             <div className=" w-full min-w-min h-16 flex justify-center items-center  hover:bg-gray-200 bg-white hover:text-amber-500 duration-300 px-3 py-2 relative group/event1 border">
               Year : 2080 / 81
               {/* sub dropdown for event */}
-              <div className="dropdown absolute hidden top-0  min-h-fit w-72 bg-gray-300 rounded-sm left-full flex-col group-hover/event1:flex h-screen overflow-y-scroll">
+              <div className="dropdown absolute hidden top-0  w-72 bg-gray-300 rounded-sm left-full flex-col group-hover/event1:flex  overflow-y-scroll min-h-screen h-full">
                 {data.map((item) => {
                   return (
                     <div
@@ -339,7 +339,7 @@ const Navbar = () => {
         </Link>
         <Link
           className="hover:text-amber-500 duration-300  flex gap-1 items-center"
-          href={"#"}
+          href={"/contact"}
         >
           {" "}
           <svg
