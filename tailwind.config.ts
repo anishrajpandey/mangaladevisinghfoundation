@@ -10,7 +10,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {},
+      backgroundImage: {
+        "donate-background": "url('/public/donate.jpg')",
+      },
       color: {
         primary: "#1855d9",
       },
@@ -18,6 +20,7 @@ const config: Config = {
   },
   plugins: [
     // ...
+
     require("flowbite/plugin"),
   ],
 };

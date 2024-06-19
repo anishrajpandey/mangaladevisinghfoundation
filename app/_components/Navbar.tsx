@@ -362,10 +362,11 @@ const Navbar = () => {
           Contact
         </Link>
       </div>
-
-      <button className="rounded-md uppercase bg-blue-500 px-4 py-2 grid place-content-center text-white font-semibold gap-0 w-fit ">
-        Donate
-      </button>
+      <Link href={"/donate"}>
+        <button className="rounded-md uppercase bg-blue-500 px-4 py-2 grid place-content-center text-white font-semibold gap-0 w-fit ">
+          Donate
+        </button>
+      </Link>
     </nav>
   );
 };

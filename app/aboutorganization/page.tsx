@@ -35,7 +35,7 @@ const page = () => {
         <ul className="flex flex-col gap-8 py-8 relative">
           <div className="absolute w-1 bg-black h-full left-1/2 -z-10"></div>
 
-          <li className="cursor-pointer group hover:bg-purple-100 hover:scale-110 duration-75 transition rounded-md text-right text-gray-800 px-12 py-12 font-bold text-2xl w-screen sm:w-[50vw] mr-auto bg-purple-200">
+          <li className="cursor-pointer group hover:bg-purple-100 hover:scale-105 duration-75 transition rounded-md text-right text-gray-800 px-12 py-12 font-bold text-2xl w-screen sm:w-[50vw] mr-auto bg-purple-200">
             <span className="group-hover:hidden"> Empowerment of Women</span>
             <span className="text-sm  font-normal hidden group-hover:block">
               The foundation works to empower women by providing educational
@@ -43,14 +43,14 @@ const page = () => {
               entrepreneurship.
             </span>
           </li>
-          <li className="cursor-pointer group hover:bg-purple-100 hover:scale-110 duration-75 transition rounded-md text-left text-gray-800 px-12 py-12 font-bold text-2xl w-screen sm:w-[50vw] ml-auto bg-purple-200">
+          <li className="cursor-pointer group hover:bg-purple-100 hover:scale-105 duration-75 transition rounded-md text-left text-gray-800 px-12 py-12 font-bold text-2xl w-screen sm:w-[50vw] ml-auto bg-purple-200">
             <span className="group-hover:hidden"> Advocacy and Awareness</span>
             <span className="text-sm  font-normal hidden group-hover:block">
               It raises awareness about womens rights issues and advocates for
               policies that promote gender equality and social justice.
             </span>
           </li>
-          <li className="cursor-pointer group hover:bg-purple-100 hover:scale-110 duration-75 transition rounded-md text-right text-gray-800 px-12 py-12 font-bold text-2xl w-screen sm:w-[50vw] mr-auto bg-purple-200">
+          <li className="cursor-pointer group hover:bg-purple-100 hover:scale-105 duration-75 transition rounded-md text-right text-gray-800 px-12 py-12 font-bold text-2xl w-screen sm:w-[50vw] mr-auto bg-purple-200">
             <span className="group-hover:hidden"> Social Welfare Programs</span>
             <span className="text-sm  font-normal hidden group-hover:block">
               The foundation may be involved in various social welfare
@@ -58,7 +58,7 @@ const page = () => {
               for marginalized communities.
             </span>
           </li>
-          <li className="cursor-pointer group hover:bg-purple-100 hover:scale-110 duration-75 transition rounded-md text-left text-gray-800 px-12 py-12 font-bold text-2xl w-screen sm:w-[50vw] ml-auto bg-purple-200">
+          <li className="cursor-pointer group hover:bg-purple-100 hover:scale-105 duration-75 transition rounded-md text-left text-gray-800 px-12 py-12 font-bold text-2xl w-screen sm:w-[50vw] ml-auto bg-purple-200">
             <span className="group-hover:hidden">
               {" "}
               Preserving Mangala Devi Singh&apos;s Legacy{" "}
@@ -69,7 +69,7 @@ const page = () => {
               Singh to Nepalese society.
             </span>
           </li>
-          <li className="cursor-pointer group hover:bg-purple-100 hover:scale-110 duration-75 transition rounded-md text-right  mr-auto text-gray-800 px-12 py-12 font-bold text-2xl w-screen sm:w-[50vw] bg-purple-200">
+          <li className="cursor-pointer group hover:bg-purple-100 hover:scale-105 duration-75 transition rounded-md text-right  mr-auto text-gray-800 px-12 py-12 font-bold text-2xl w-screen sm:w-[50vw] bg-purple-200">
             <span className="group-hover:hidden">
               {" "}
               Advancing Gender Equality
@@ -81,7 +81,7 @@ const page = () => {
             </span>
           </li>
 
-          <li className="cursor-pointer group hover:bg-purple-100 hover:scale-110 duration-75 transition rounded-md text-left text-gray-800 px-12 py-12 font-bold text-2xl w-screen sm:w-[50vw] ml-auto bg-purple-200">
+          <li className="cursor-pointer group hover:bg-purple-100 hover:scale-105 duration-75 transition rounded-md text-left text-gray-800 px-12 py-12 font-bold text-2xl w-screen sm:w-[50vw] ml-auto bg-purple-200">
             <span className="group-hover:hidden"> Promoting Education</span>
             <span className="text-sm  font-normal hidden group-hover:block">
               Providing scholarships and educational resources to
@@ -90,7 +90,7 @@ const page = () => {
             </span>
           </li>
 
-          <li className="cursor-pointer group hover:bg-purple-100 hover:scale-110 duration-75 transition rounded-md text-right  mr-auto text-gray-800 px-12 py-12 font-bold text-2xl w-screen sm:w-[50vw] bg-purple-200">
+          <li className="cursor-pointer group hover:bg-purple-100 hover:scale-105 duration-75 transition rounded-md text-right  mr-auto text-gray-800 px-12 py-12 font-bold text-2xl w-screen sm:w-[50vw] bg-purple-200">
             <span className="group-hover:hidden"> Leadership and Advocacy</span>
             <span className="text-sm  font-normal hidden group-hover:block">
               Training women to become leaders and change-makers in their
@@ -98,7 +98,7 @@ const page = () => {
               discuss and address gender issues.
             </span>
           </li>
-          <li className="cursor-pointer group hover:bg-purple-100 hover:scale-110 duration-75 transition rounded-md text-left text-gray-800 px-12 py-12 font-bold text-2xl w-screen sm:w-[50vw] ml-auto bg-purple-200">
+          <li className="cursor-pointer group hover:bg-purple-100 hover:scale-105 duration-75 transition rounded-md text-left text-gray-800 px-12 py-12 font-bold text-2xl w-screen sm:w-[50vw] ml-auto bg-purple-200">
             <span className="group-hover:hidden">
               Cultural Preservation and Awareness
             </span>
