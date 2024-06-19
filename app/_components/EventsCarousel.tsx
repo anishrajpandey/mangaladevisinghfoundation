@@ -4,6 +4,7 @@ import React, { useEffect } from "react";
 import "@/app/news/News.css";
 import "swiper/css";
 import Swiper from "swiper";
+import data from "../events/data";
 import Link from "next/link";
 
 const EventsCarousel = () => {
@@ -44,7 +45,7 @@ const EventsCarousel = () => {
       },
     });
   }, []);
-  const EventCarousel = [
+  const Newsitems = [
     {
       Title: "Mangaladevi Singh: A Pioneer Female Leader",
       Description:
@@ -78,125 +79,71 @@ const EventsCarousel = () => {
     },
   ];
   return (
-    <section className="py-28">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-center flex-wrap md:flex-wrap lg:flex-nowrap lg:flex-row lg:justify-between gap-8">
-          <div className="w-full flex justify-between flex-col">
-            {/* <!-- Slider controls --> */}
-          </div>
+    <main className="py-24">
+      <h3 className="text-center text-lg md:text-3xl uppercase tracking-wide my-2 font-semibold">
+        <span className="text-purple-600 ">♥️ काम र परियोजनाहरू</span>
+      </h3>
+      <section className="py-12">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="flex justify-center flex-wrap md:flex-wrap lg:flex-nowrap lg:flex-row lg:justify-between gap-8">
+            <div className="w-full flex justify-between flex-col">
+              {/* <!-- Slider controls --> */}
+            </div>
 
-          <div className="w-full">
-            {/* <!--Slider wrapper--> */}
-            <div className="swiper mySwiper">
-              <div className="swiper-wrapper">
-                {EventCarousel.map((Data, index) => {
-                  return (
-                    <div key={index} className="swiper-slide w-full  group">
-                      <div className="flex items-center mb-9">
-                        <Image
-                          width={600}
-                          height={600}
-                          src={Data.Image}
-                          alt="blogs tailwind section"
-                          className="rounded-2xl w-full"
-                        />
-                      </div>
-                      <h3 className="text-xl text-gray-900 font-medium leading-8 mb-4 group-hover:text-amber-500">
-                        {Data.Title}
-                      </h3>
-                      {/* <p className="text-gray-500 leading-6 transition-all duration-500 mb-8">
+            <div className="w-full">
+              {/* <!--Slider wrapper--> */}
+              <div className="swiper mySwiper">
+                <div className="swiper-wrapper">
+                  {data.map((Data, index) => {
+                    return (
+                      <div key={index} className="swiper-slide w-full  group">
+                        <div className="flex items-center mb-9">
+                          <Image
+                            width={600}
+                            height={600}
+                            src={`/eventphotos/${Data.images[0]}`}
+                            alt="blogs tailwind section"
+                            className="rounded-2xl w-full"
+                          />
+                        </div>
+                        <h3 className="text-xl text-gray-900 font-medium leading-8 mb-4 group-hover:text-amber-500">
+                          {Data.titleNepali}
+                        </h3>
+                        {/* <p className="text-gray-500 leading-6 transition-all duration-500 mb-8">
                         {Data.Description}
                       </p> */}
-                      <a
-                        href={Data.URL}
-                        target="blank"
-                        className="cursor-pointer flex items-center gap-2 text-lg text-amber-700 font-semibold"
-                      >
-                        Read more
-                        <svg
-                          width="15"
-                          height="12"
-                          viewBox="0 0 15 12"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
+                        <Link
+                          href={`/events/${Data.id}`}
+                          target="blank"
+                          className="cursor-pointer flex items-center gap-2 text-lg text-amber-700 font-semibold"
                         >
-                          <path
-                            d="M1.25 6L13.25 6M9.5 10.5L13.4697 6.53033C13.7197 6.28033 13.8447 6.15533 13.8447 6C13.8447 5.84467 13.7197 5.71967 13.4697 5.46967L9.5 1.5"
-                            stroke="#4338CA"
-                            strokeWidth="1.8"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                          />
-                        </svg>
-                      </a>
-                    </div>
-                  );
-                })}
+                          Read more
+                          <svg
+                            width="15"
+                            height="12"
+                            viewBox="0 0 15 12"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M1.25 6L13.25 6M9.5 10.5L13.4697 6.53033C13.7197 6.28033 13.8447 6.15533 13.8447 6C13.8447 5.84467 13.7197 5.71967 13.4697 5.46967L9.5 1.5"
+                              stroke="#4338CA"
+                              strokeWidth="1.8"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                            />
+                          </svg>
+                        </Link>
+                      </div>
+                    );
+                  })}
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    // <section className="py-28">
-    //   <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-    //     <div className="flex justify-center flex-wrap md:flex-wrap lg:flex-nowrap lg:flex-row lg:justify-between gap-8">
-    //       <div className="w-full lg:w-3/5">
-    //         {/* <!--Slider wrapper--> */}
-    //         <div className="swiper mySwiper">
-    //           <div className="swiper-wrapper">
-    //             {EventCarousel.map((Data, index) => {
-    //               return (
-    //                 <div
-    //                   key={index}
-    //                   className="swiper-slide w-full max-lg:max-w-xl lg:w-1/2 group"
-    //                 >
-    //                   <div className="flex items-center mb-9">
-    //                     <Image
-    //                       width={600}
-    //                       height={600}
-    //                       src={Data.Image}
-    //                       alt="blogs tailwind section"
-    //                       className="rounded-2xl w-full"
-    //                     />
-    //                   </div>
-    //                   <h3 className="text-xl text-gray-900 font-medium leading-8 mb-4 group-hover:text-amber-500">
-    //                     {Data.Title}
-    //                   </h3>
-    //                   <p className="text-gray-500 leading-6 transition-all duration-500 mb-8">
-    //                     {Data.Description}
-    //                   </p>
-    //                   <a
-    //                     href={Data.URL}
-    //                     target="blank"
-    //                     className="cursor-pointer flex items-center gap-2 text-lg text-amber-700 font-semibold"
-    //                   >
-    //                     Read more
-    //                     <svg
-    //                       width="15"
-    //                       height="12"
-    //                       viewBox="0 0 15 12"
-    //                       fill="none"
-    //                       xmlns="http://www.w3.org/2000/svg"
-    //                     >
-    //                       <path
-    //                         d="M1.25 6L13.25 6M9.5 10.5L13.4697 6.53033C13.7197 6.28033 13.8447 6.15533 13.8447 6C13.8447 5.84467 13.7197 5.71967 13.4697 5.46967L9.5 1.5"
-    //                         stroke="#4338CA"
-    //                         strokeWidth="1.8"
-    //                         strokeLinecap="round"
-    //                         strokeLinejoin="round"
-    //                       />
-    //                     </svg>
-    //                   </a>
-    //                 </div>
-    //               );
-    //             })}
-    //           </div>
-    //         </div>
-    //       </div>
-    //     </div>
-    //   </div>
-    // </section>
+      </section>
+    </main>
   );
 };
 
