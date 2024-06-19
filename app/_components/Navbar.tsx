@@ -20,8 +20,6 @@ const Navbar = () => {
         NavbarRef?.current?.classList?.add("-top-full");
       } else {
         NavbarRef?.current?.classList?.remove("-top-full");
-
-        console.log("up");
       }
       position = scroll;
     });

@@ -79,11 +79,11 @@ const EventsCarousel = () => {
     },
   ];
   return (
-    <main className="py-24">
+    <main className="pt-24 ">
       <h3 className="text-center text-lg md:text-3xl uppercase tracking-wide my-2 font-semibold">
         <span className="text-purple-600 ">♥️ काम र परियोजनाहरू</span>
       </h3>
-      <section className="py-12">
+      <section className="pt-4">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="flex justify-center flex-wrap md:flex-wrap lg:flex-nowrap lg:flex-row lg:justify-between gap-8">
             <div className="w-full flex justify-between flex-col">

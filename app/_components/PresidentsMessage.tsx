@@ -7,7 +7,7 @@ const PresidentsMessage = () => {
       <h3 className="text-center text-lg md:text-3xl uppercase tracking-wide my-2 font-semibold">
         <span className="text-purple-600 ">♥️ अध्यक्षको सन्देश</span>
       </h3>
-      <div className="flex flex-row-reverse  flex-wrap justify-around items-center my-4">
+      <div className="flex flex-col md:flex-row-reverse  flex-wrap justify-around items-center my-4">
         <div className="rounded-md  shadow-xl overflow-hidden ">
           <Image
             src="/images/srijana.jpg"
@@ -17,7 +17,7 @@ const PresidentsMessage = () => {
           />
         </div>
 
-        <p className="w-full px-12 md:w-1/2 leading-10 text-lg">
+        <p className="w-screen px-12 py-2 md:w-1/2 leading-10 text-md md:text-lg">
           मंगलादेवीसिंह फाउन्डेशनको अध्यक्षको रूपमा, म सृजना सिंहले तपाईंहरू
           सबैलाई हाम्रो वेबसाइटमा हार्दिक स्वागत गर्न चाहन्छु। हाम्रो संस्था
           शिक्षा, स्वास्थ्य, र समाज सेवाको क्षेत्रमा योगदान पुर्याउने

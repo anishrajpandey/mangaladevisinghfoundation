@@ -7,7 +7,7 @@ const AboutSection = ({ detail }: { detail: Boolean }) => {
       <h3 className="text-center text-lg md:text-3xl uppercase tracking-wide my-2 font-semibold">
         <span className="text-purple-600 ">♥️ मंगला देवी सिंह</span>
       </h3>
-      <div className="flex flex-row gap-4 flex-wrap justify-around items-center my-4">
+      <div className="flex flex-col md:flex-row gap-4 flex-wrap justify-center md:justify-around items-center my-4">
         <div
           className={` ${
             !detail ? "rounded-lg md:rounded-[100%]" : "rounded-sm"
@@ -21,7 +21,7 @@ const AboutSection = ({ detail }: { detail: Boolean }) => {
           />
         </div>
 
-        <div className="w-full px-12 md:w-1/2">
+        <div className=" px-12 w-screen md:w-[50vw]">
           <p className="my-3  text-md leading-7 md:text-lg text-gray-800 ">
             मंगला देवी सिंह यो देशको पहिलो महिला नेत्री हुनुहुन्छ । २००७ सालको
             क्रान्ति पूर्व देश भरिका महिलाहरुलाई जागृत बनाउने अभियानमा लागेर
