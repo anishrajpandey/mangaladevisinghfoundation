@@ -203,7 +203,7 @@ const Navbar = () => {
 
             <Link className="" href={"/aboutorganization"}>
               <div className=" h-16 flex justify-center items-center  w-full bg-white hover:bg-gray-200 hover:text-amber-500 duration-300 px-3 py-2">
-                MANGALADEVISINGH FOUNDATION
+                MANGALA DEVI SINGH FOUNDATION
               </div>
             </Link>
           </div>
