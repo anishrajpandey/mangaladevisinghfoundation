@@ -4,6 +4,7 @@ import AboutSection from "./_components/AboutSection";
 import PresidentsMessage from "./_components/PresidentsMessage";
 import EventsCarousel from "./_components/EventsCarousel";
 import Timeline from "./_components/Timeline";
+import { FeaturedImageGallery } from "./_components/Gallery";
 export default function Home() {
   return (
     <main>
@@ -12,6 +13,7 @@ export default function Home() {
       <PresidentsMessage />
       <EventsCarousel />
       <Timeline />
+      <FeaturedImageGallery />
     </main>
   );
 }
