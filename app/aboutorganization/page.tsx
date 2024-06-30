@@ -145,7 +145,10 @@ const page = () => {
       </div>
 
       <Heartpattern text={""} />
-      <h1 className="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
+      <h1
+        id="boardmembers"
+        className="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white"
+      >
         Our&nbsp;
         <span className="underline underline-offset-3 decoration-8 decoration-blue-400 dark:decoration-blue-600">
           Board Members{" "}

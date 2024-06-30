@@ -206,6 +206,11 @@ const Navbar = () => {
                 MANGALA DEVI SINGH FOUNDATION
               </div>
             </Link>
+            <Link className="" href={"/aboutorganization#boardmembers"}>
+              <div className=" h-16 flex justify-center items-center  w-full bg-white hover:bg-gray-200 hover:text-amber-500 duration-300 px-3 py-2">
+                BOARD MEMBERS
+              </div>
+            </Link>
           </div>
         </div>
         <div className="duration-300  cursor-pointer group relative">
