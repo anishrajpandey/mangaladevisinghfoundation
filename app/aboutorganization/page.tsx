@@ -10,6 +10,79 @@ import {
 } from "../_globalcomponents/SocialIcons";
 
 const page = () => {
+  const boardMembers = [
+    {
+      Name: "सृजना श्रेष्ठ सिंह ",
+      Designation: "अधक्ष्य ",
+      Photo: "/images/srijana.jpg",
+      Socials: [
+        <FacebookIcon link={""} key={""} />,
+        <XIcon link={""} key={""} />,
+        <MailIcon link={"mailto:srijanasingh@gmail.com"} key={""} />,
+      ],
+    },
+    {
+      Name: "भारती सिलवाल गिरि",
+      Designation: "उपाध्यक्ष् ",
+      Photo: "/placeholder.jpeg",
+      Socials: [],
+    },
+    {
+      Name: "  ईन्द्र मान सिंह सुवाल्",
+      Designation: "महासचिव् ",
+      Photo: "/placeholder.jpeg",
+      Socials: [<MailIcon link={""} key={""} />],
+    },
+    {
+      Name: " सारीता श्रेष्ठ",
+      Designation: "कोसाधक्ष्य ",
+      Photo: "/placeholder.jpeg",
+      Socials: [<MailIcon link={""} key={""} />],
+    },
+    {
+      Name: "शशी प्रधान",
+      Designation: "   सदस्य",
+      Photo: "/placeholder.jpeg",
+      Socials: [<MailIcon link={""} key={""} />],
+    },
+    {
+      Name: "  कल्याणी रिजाल",
+      Designation: "  सदस्य ",
+      Photo: "/placeholder.jpeg",
+      Socials: [<MailIcon link={""} key={""} />],
+    },
+    {
+      Name: "  राज्य लक्ष्मी श्रेष्ठ",
+      Designation: "  सदस्य ",
+      Photo: "/placeholder.jpeg",
+      Socials: [<MailIcon link={""} key={""} />],
+    },
+    {
+      Name: "  बिष्णु देवी पुडासैनि",
+      Designation: "  सदस्य ",
+      Photo: "/placeholder.jpeg",
+      Socials: [<MailIcon link={""} key={""} />],
+    },
+    {
+      Name: "  निकिता पान्डे",
+      Designation: "  सदस्य ",
+      Photo: "/placeholder.jpeg",
+      Socials: [<MailIcon link={""} key={""} />],
+    },
+    {
+      Name: "  आकृती राणा",
+      Designation: "  सदस्य ",
+      Photo: "/placeholder.jpeg",
+      Socials: [<MailIcon link={""} key={""} />],
+    },
+    {
+      Name: "  मिन रत्न बज्राचार्य",
+      Designation: "  सदस्य ",
+      Photo: "/placeholder.jpeg",
+      Socials: [<MailIcon link={""} key={""} />],
+    },
+  ];
+
   return (
     <main className="p-2 pt-24 md:p-24 grid grid-cols-1 gap-16">
       <div>
@@ -156,28 +229,31 @@ const page = () => {
       </h1>
 
       <div className="flex gap-12 flex-wrap justify-center">
-        <div className="border shadow-md flex  gap-2 flex-col items-center justify-center">
-          <div className="bg-gray-400 height-[300px] w-full ">
-            <Image
-              src={"/images/srijana.jpg"}
-              width={300}
-              height={400}
-              className="w-72 h-80"
-              alt=""
-            />
-          </div>
-          <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-            Srijana Singh
-          </h5>
-          <p className="font-normal text-gray-700 dark:text-gray-400">
-            Chairperson
-          </p>
-          <div className="flex gap-2 pb-2">
-            <FacebookIcon link={""} />
-            <XIcon link={""} />
-            <MailIcon link={"mailto:srijanasingh@gmail.com"} />
-          </div>
-        </div>
+        {boardMembers.map(({ Name, Designation, Socials, Photo }, index) => {
+          return (
+            <div
+              className="border shadow-md flex  gap-2 flex-col items-center justify-center"
+              key={index}
+            >
+              <div className="bg-gray-400 height-[300px] w-full ">
+                <Image
+                  src={Photo}
+                  width={300}
+                  height={400}
+                  className="w-72 h-80"
+                  alt=""
+                />
+              </div>
+              <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                {Name}
+              </h5>
+              <p className="font-normal text-gray-700 dark:text-gray-400">
+                {Designation}
+              </p>
+              <div className="flex gap-2 pb-2">{Socials}</div>
+            </div>
+          );
+        })}
 
         {/*
          */}
