@@ -10,7 +10,7 @@ const page = () => {
           Donate to Mangaladevi Singh Foundation
         </h1>
         <h1 className="text-xl flex justify-center items-center text-gray-800 md:text-xl font-bold px-8 py-4 w-full  ">
-          Bank Account Number : 123456789098765{" "}
+          Bank Account Number : 01601040250696{" "}
         </h1>
         <h1 className="text-xl flex justify-center items-center text-gray-800 md:text-xl font-bold px-8 py-4 w-full  ">
           Bank Account Name : Mangala Devi Singh Foundation{" "}

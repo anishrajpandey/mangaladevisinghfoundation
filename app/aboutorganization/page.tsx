@@ -34,7 +34,7 @@ const page = () => {
       Socials: [<MailIcon link={""} key={""} />],
     },
     {
-      Name: " सारीता श्रेष्ठ",
+      Name: " सरीता श्रेष्ठ",
       Designation: "कोसाधक्ष्य ",
       Photo: "/placeholder.jpeg",
       Socials: [<MailIcon link={""} key={""} />],
