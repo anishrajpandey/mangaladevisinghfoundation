@@ -108,7 +108,9 @@ const Contact = () => {
                     <h4 className="mb-1 text-xl font-bold text-dark ">
                       Phone Number
                     </h4>
-                    <p className="text-base text-body-color 6">01-4102122 </p>
+                    <p className="text-base text-body-color 6">
+                      +977 9745956050{" "}
+                    </p>
                   </div>
                 </div>
 
