@@ -127,6 +127,17 @@ const data = [
     date: `16th June, 2024`,
     images: ["1301.jpg", "1302.jpg", "1303.jpg", "1304.jpg", "1305.jpg"],
   },
+  {
+    id: 14,
+    titleEnglish: ` basic sewing training and certificate distribution `,
+    titleNepali: ` आधारभुत सिलाइ कटाई तालिम`,
+    descEnglish: `The program concluded at the completion of 3 months basic sewing training and certificate distribution ceremony with the help of Mangala Devi Singh Foundation's technical support and industrial and commerce office.
+#उद्धमीबनौ #आर्थिकरूपमाआत्मनिर्भर`,
+    descNepali: `मंगला देवी सिंह फाउण्डेशनको प्रविधिक सहयोग र उधोग तथा बाणिज्य कार्यालयको सहयोगमा ३ महिने  आधारभुत सिलाइ कटाई तालिमको समापन तथा प्रमाण पत्र वितरण  समारोहमा कार्यक्रम सम्पन्न । 
+#उद्धमीबनौ #आर्थिकरूपमाआत्मनिर्भर`,
+    date: `30th June, 2024`,
+    images: ["1401.jpg", "1402.jpg", "1403.jpg", "1404.jpg"],
+  },
 ];
 
 export default data;

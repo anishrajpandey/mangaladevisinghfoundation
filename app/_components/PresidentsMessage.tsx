@@ -5,7 +5,7 @@ const PresidentsMessage = () => {
   return (
     <section className="py-12 px-2 md:px-12 bg-slate-50 ">
       <h3 className="text-center text-lg md:text-3xl uppercase tracking-wide my-2 font-semibold">
-        <span className="text-purple-600 ">♥️ अध्यक्षको सन्देश</span>
+        <span className="text-purple-600 ">अध्यक्षको सन्देश</span>
       </h3>
       <div className="flex flex-col md:flex-row-reverse  flex-wrap justify-around items-center my-4">
         <div className="rounded-md  shadow-xl overflow-hidden ">

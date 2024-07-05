@@ -5,7 +5,7 @@ const AboutSection = ({ detail }: { detail: Boolean }) => {
   return (
     <section className="py-12 px-2 md:px-12 bg-slate-50 ">
       <h3 className="text-center text-lg md:text-3xl uppercase tracking-wide my-2 font-semibold">
-        <span className="text-purple-600 ">♥️ मंगला देवी सिंह</span>
+        <span className="text-purple-600 ">मंगला देवी सिंह</span>
       </h3>
       <div className="flex flex-col md:flex-row gap-4 flex-wrap justify-center md:justify-around items-center my-4">
         <div

@@ -153,12 +153,12 @@ const Navbar = () => {
               <div className=" w-full min-w-min h-16 flex justify-center items-center  hover:bg-gray-200 bg-white hover:text-amber-500 duration-300 px-3 py-2 relative group/event1 border">
                 Year : 2080 / 81
                 {/* sub dropdown for event */}
-                <div className="dropdown absolute hidden top-0  w-72 bg-gray-300 rounded-sm left-full flex-col group-hover/event1:flex  overflow-y-scroll min-h-screen h-full">
+                <div className="dropdown absolute hidden top-0  w-72  rounded-sm left-full flex-col group-hover/event1:flex  overflow-y-scroll min-h-screen h-fit">
                   {data.map((item) => {
                     return (
                       <div
                         key={item.id}
-                        className=" w-full min-w-min h-16 flex justify-center items-center  hover:bg-gray-200 bg-white hover:text-amber-500 duration-300 px-3 py-2 relative"
+                        className=" w-full min-w-min h-16 flex justify-center items-center  hover:bg-gray-200  hover:text-amber-500 duration-300 px-3 py-2 relative"
                       >
                         <Link className=" " href={`/events/${item.id}`}>
                           {item.titleNepali}

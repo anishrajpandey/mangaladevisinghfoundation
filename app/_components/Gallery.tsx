@@ -23,9 +23,9 @@ export function FeaturedImageGallery() {
 
   return (
     <div className="grid gap-4 px-24">
-      <h2 className="text-xl md:text-2xl font-semibold py-6">
-        Captured Moments of Mangala Devi Singh
-      </h2>
+      <h3 className="text-center my-4 text-lg md:text-3xl uppercase tracking-wide my-2 font-semibold">
+        <span className="text-purple-600 ">ऐतिहासिक तस्बिरहरु </span>
+      </h3>
       <div>
         <img
           className="h-auto w-full max-w-full rounded-lg object-cover object-center md:h-[480px]"

@@ -7,7 +7,7 @@ export default function Component() {
   return (
     <main className="bg-orange-100 bg-opacity-25 py-8 pt-12">
       <h3 className="text-center text-lg md:text-3xl uppercase tracking-wide my-2 font-semibold">
-        <span className="text-purple-600 ">♥️ आधारभूत सिद्धान्तहरू</span>
+        <span className="text-purple-600 ">आधारभूत सिद्धान्तहरू</span>
       </h3>
       <main className="px-3 flex justify-center ">
         <Timeline className=" w-screen px-4 md:w-4/6">
